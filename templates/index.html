@@ -2,42 +2,107 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Генерация билета</title>
+    <title>Генератор экзаменационного билета</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; }
-        .card { margin-top: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { margin-bottom: 30px; }
-        .btn-custom { background-color: #4CAF50; color: white; }
-        .btn-custom:hover { background-color: #45a049; }
+        body {
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 100%;
+            animation: fadeIn 1s ease-out;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007BFF;
+        }
+        .question-card {
+            background: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .question-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .btn-custom {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            border: none;
+            transition: background 0.4s ease, transform 0.3s ease;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(45deg, #2575fc, #6a11cb);
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 20px;
+        }
     </style>
 </head>
-<body class="container py-5">
-    <h1 class="text-center">Генератор экзаменационного билета</h1>
-    <div class="text-center">
-        <form method="get">
-            <button class="btn btn-custom btn-lg" type="submit">Сгенерировать билет</button>
-        </form>
+<body>
+    <div class="container">
+        <h1>🎓 Генератор экзаменационного билета</h1>
+        <div class="text-center mb-4">
+            <form method="get">
+                <button class="btn btn-custom">Сгенерировать билет</button>
+            </form>
+        </div>
+
+        {% if q1_number %}
+        <div class="question-card">
+            <h4>1. (№ {{ q1_number }}) {{ q1_text }}</h4>
+            <p><em>({{ q1_discipline }})</em></p>
+        </div>
+        <div class="question-card">
+            <h4>2. (№ {{ q2_number }}) {{ q2_text }}</h4>
+            <p><em>({{ q2_discipline }})</em></p>
+        </div>
+        <div class="question-card">
+            <h4>3. (№ {{ q3_number }}) {{ q3_text }}</h4>
+            <p><em>({{ q3_discipline }})</em></p>
+        </div>
+        {% endif %}
+
+        <footer>© 2025 Senior Frontend Design</footer>
     </div>
 
-{% if q1_number %}
-<div class="row justify-content-center mt-5">
-    <div class="col-md-8">
-        <div class="card p-4">
-            <h3>1. (№ {{ q1_number }}) {{ q1_text }}</h3>
-            <p class="text-muted"><em>({{ q1_discipline }})</em></p>
-        </div>
-        <div class="card p-4">
-            <h3>2. (№ {{ q2_number }}) {{ q2_text }}</h3>
-            <p class="text-muted"><em>({{ q2_discipline }})</em></p>
-        </div>
-        <div class="card p-4">
-            <h3>3. (№ {{ q3_number }}) {{ q3_text }}</h3>
-            <p class="text-muted"><em>({{ q3_discipline }})</em></p>
-        </div>
-    </div>
-</div>
-{% endif %}
-
+    <!-- Optional: Добавим плавное появление при загрузке -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.question-card');
+            cards.forEach((card, index) => {
+                card.style.animation = `fadeIn 0.5s ease-out ${index * 0.2}s both`;
+            });
+        });
+    </script>
 </body>
 </html>
