@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генерация билета</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .card { margin-top: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { margin-bottom: 30px; }
+        .btn-custom { background-color: #4CAF50; color: white; }
+        .btn-custom:hover { background-color: #45a049; }
+    </style>
+</head>
+<body class="container py-5">
+    <h1 class="text-center">Генератор экзаменационного билета</h1>
+    <div class="text-center">
+        <form method="get">
+            <button class="btn btn-custom btn-lg" type="submit">Сгенерировать билет</button>
+        </form>
+    </div>
+
+{% if q1_number %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8">
+        <div class="card p-4">
+            <h3>1. (№ {{ q1_number }}) {{ q1_text }}</h3>
+            <p class="text-muted"><em>({{ q1_discipline }})</em></p>
+        </div>
+        <div class="card p-4">
+            <h3>2. (№ {{ q2_number }}) {{ q2_text }}</h3>
+            <p class="text-muted"><em>({{ q2_discipline }})</em></p>
+        </div>
+        <div class="card p-4">
+            <h3>3. (№ {{ q3_number }}) {{ q3_text }}</h3>
+            <p class="text-muted"><em>({{ q3_discipline }})</em></p>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+</body>
+</html>
