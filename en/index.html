@@ -10,28 +10,32 @@
     <meta property="og:description" content="An autonomous mobile robot for product information control. Pilot stage.">
     <title>Industrial Robotics and Technologies</title>
     <link rel="icon" href="../static/images/robot-brand-mark-v02.png" type="image/png">
-    <link rel="stylesheet" href="../static/style.css?v=20260720-15">
-    <script src="../static/site.js" defer></script>
+    <link rel="stylesheet" href="../static/style.css?v=20260720-16">
+    <script src="../static/site.js?v=20260720-16" defer></script>
 </head>
-<body id="top">
-    <header class="site-header">
-        <div class="container header-content">
-            <a class="wordmark" href="#top" aria-label="Industrial Robotics and Technologies">
-                <img class="wordmark-mark" src="../static/images/robot-brand-mark-v02.png" alt="">
-                <span class="wordmark-text">Industrial<br>Robotics and Technologies</span>
-            </a>
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="#product">Product</a>
-                <a href="#development">Development</a>
-                <a href="#team">Team</a>
-                <a href="#contacts">Contacts</a>
-            </nav>
-            <a class="language-link" href="../" lang="ru">RU</a>
+<body id="top" class="landing-page">
+    <nav class="route-navigation" data-route-navigation aria-label="Site section route">
+        <div class="route-track" aria-hidden="true"></div>
+        <div class="route-stops">
+            <a class="route-stop" data-route-stop href="#overview" aria-label="Overview"><span></span></a>
+            <a class="route-stop" data-route-stop href="#challenge" aria-label="Challenge"><span></span></a>
+            <a class="route-stop" data-route-stop href="#scenarios" aria-label="Use cases"><span></span></a>
+            <a class="route-stop" data-route-stop href="#product" aria-label="Product"><span></span></a>
+            <a class="route-stop" data-route-stop href="#system" aria-label="System"><span></span></a>
+            <a class="route-stop" data-route-stop href="#development" aria-label="Development"><span></span></a>
+            <a class="route-stop" data-route-stop href="#materials" aria-label="Project materials"><span></span></a>
+            <a class="route-stop" data-route-stop href="#team" aria-label="Team"><span></span></a>
+            <a class="route-stop" data-route-stop href="#updates" aria-label="Updates"><span></span></a>
+            <a class="route-stop" data-route-stop href="#contacts" aria-label="Contacts"><span></span></a>
         </div>
-    </header>
+        <span class="route-robot" data-route-robot aria-hidden="true">
+            <img src="../static/images/robot-brand-mark-v02.png" alt="">
+            <span class="route-scanner"></span>
+        </span>
+    </nav>
 
     <main>
-        <section class="hero section">
+        <section class="hero section" id="overview" data-route-section>
             <div class="container hero-grid">
                 <div class="hero-copy">
                     <p class="eyebrow">Autonomous shelf monitoring</p>
@@ -62,7 +66,7 @@
             </div>
         </section>
 
-        <section class="problem-section section" aria-labelledby="problem-title">
+        <section class="problem-section section" id="challenge" data-route-section aria-labelledby="problem-title">
             <div class="container">
                 <div class="section-intro">
                     <p class="eyebrow">Challenge</p>
@@ -93,7 +97,7 @@
             </div>
         </section>
 
-        <section class="scenarios-section section" aria-labelledby="scenarios-title">
+        <section class="scenarios-section section" id="scenarios" data-route-section aria-labelledby="scenarios-title">
             <div class="container">
                 <div class="section-heading">
                     <div>
@@ -125,7 +129,7 @@
             </div>
         </section>
 
-        <section class="product-section section" id="product" aria-labelledby="product-title">
+        <section class="product-section section" id="product" data-route-section aria-labelledby="product-title">
             <div class="container product-layout">
                 <div>
                     <p class="eyebrow eyebrow-light">Product</p>
@@ -156,7 +160,7 @@
             </div>
         </section>
 
-        <section class="technology-section section" aria-labelledby="technology-title">
+        <section class="technology-section section" id="system" data-route-section aria-labelledby="technology-title">
             <div class="container">
                 <div class="section-heading">
                     <div>
@@ -188,7 +192,7 @@
             </div>
         </section>
 
-        <section class="development-section section" id="development" aria-labelledby="development-title">
+        <section class="development-section section" id="development" data-route-section aria-labelledby="development-title">
             <div class="container development-layout">
                 <div class="section-intro">
                     <p class="eyebrow">Development</p>
@@ -234,7 +238,7 @@
             </div>
         </section>
 
-        <section class="evidence-section section" aria-labelledby="evidence-title">
+        <section class="evidence-section section" id="materials" data-route-section aria-labelledby="evidence-title">
             <div class="container">
                 <div class="evidence-layout">
                     <div>
@@ -264,7 +268,7 @@
             </div>
         </section>
 
-        <section class="team-section section" id="team" aria-labelledby="team-title">
+        <section class="team-section section" id="team" data-route-section aria-labelledby="team-title">
             <div class="container">
                 <div class="section-heading">
                     <div>
@@ -290,7 +294,7 @@
             </div>
         </section>
 
-        <section class="news-section section" aria-labelledby="news-title">
+        <section class="news-section section" id="updates" data-route-section aria-labelledby="news-title">
             <div class="container news-layout">
                 <div>
                     <p class="eyebrow">News</p>
@@ -304,7 +308,7 @@
             </div>
         </section>
 
-        <section class="contacts-section section" id="contacts" aria-labelledby="contacts-title">
+        <section class="contacts-section section" id="contacts" data-route-section aria-labelledby="contacts-title">
             <div class="container contacts-layout">
                 <div>
                     <p class="eyebrow eyebrow-light">Contacts</p>

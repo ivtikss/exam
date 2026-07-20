@@ -23,6 +23,19 @@ conceptual unless a page explicitly links to verified materials.
 - Do not self-host or download commercial font files without a licensed
   webfont package supplied by the project owner.
 
+## Interaction
+
+- On desktop, the homepage is structured as full-viewport stages with
+  scroll snapping. Each stage must fit within one viewport without clipping
+  essential content.
+- The fixed left route is the primary page navigation. Its robot marker moves
+  continuously with page progress; the active route point uses the orange
+  scan treatment.
+- Keep the route visual compact and label-free. Accessible names belong in
+  `aria-label` attributes, not visible copy.
+- Do not add a desktop header or a language switcher above the first section.
+  The language switch remains in the footer.
+
 ## Palette
 
 | Token | Hex | Role |
