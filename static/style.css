@@ -618,6 +618,26 @@ h3 {
     margin-top: 64px;
 }
 
+.section-graphic {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.section-graphic img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.scenario-graphic {
+    margin-top: 58px;
+}
+
+.scenario-graphic + .scenario-grid {
+    margin-top: 28px;
+}
+
 .scenario-card {
     min-height: 300px;
     border-top: 2px solid var(--ink);
@@ -698,6 +718,12 @@ h3 {
     line-height: 1.5;
 }
 
+.product-graphic {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    border: 1px solid #835daf;
+}
+
 .technology-section {
     background: var(--orange);
 }
@@ -719,6 +745,15 @@ h3 {
 
 .technology-grid {
     margin-top: 62px;
+}
+
+.technology-graphic {
+    margin-top: 58px;
+    border: 1px solid rgb(56 17 94 / 32%);
+}
+
+.technology-graphic + .technology-grid {
+    margin-top: 28px;
 }
 
 .technology-card {
@@ -748,7 +783,15 @@ h3 {
     gap: 120px;
 }
 
+.development-graphic {
+    grid-column: 1;
+    width: min(100%, 480px);
+    margin-top: -42px;
+}
+
 .development-list {
+    grid-column: 2;
+    grid-row: 1 / span 2;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -1185,6 +1228,17 @@ h3 {
     .news-layout {
         grid-template-columns: 1fr;
         gap: 56px;
+    }
+
+    .development-graphic,
+    .development-list {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .development-graphic {
+        width: min(100%, 560px);
+        margin-top: -28px;
     }
 
     .hero-grid {
