@@ -10,32 +10,54 @@
     <meta property="og:description" content="An autonomous mobile robot for product information control. Pilot stage.">
     <title>Industrial Robotics and Technologies</title>
     <link rel="icon" href="../static/images/robot-brand-mark-v02.png" type="image/png">
-    <link rel="stylesheet" href="../static/style.css?v=20260720-17">
-    <script src="../static/site.js?v=20260720-16" defer></script>
+    <link rel="stylesheet" href="../static/style.css?v=20260720-24">
+    <script src="../static/site.js?v=20260720-17" defer></script>
 </head>
 <body id="top" class="landing-page">
     <nav class="route-navigation" data-route-navigation aria-label="Site section route">
-        <div class="route-track" aria-hidden="true"></div>
+        <svg class="route-track" data-route-track aria-hidden="true" viewBox="0 0 100 1000" preserveAspectRatio="none">
+            <path class="route-track-base" data-route-path d="M50 24 C78 126 20 232 50 338 S79 500 48 610 S22 790 50 976" pathLength="100"></path>
+            <path class="route-track-progress" data-route-progress d="M50 24 C78 126 20 232 50 338 S79 500 48 610 S22 790 50 976" pathLength="100"></path>
+            <path class="route-track-active" data-route-active-segment d="M50 24 C78 126 20 232 50 338 S79 500 48 610 S22 790 50 976" pathLength="100"></path>
+        </svg>
         <div class="route-stops">
-            <a class="route-stop" data-route-stop href="#overview" aria-label="Overview"><span></span></a>
-            <a class="route-stop" data-route-stop href="#challenge" aria-label="Challenge"><span></span></a>
-            <a class="route-stop" data-route-stop href="#scenarios" aria-label="Use cases"><span></span></a>
-            <a class="route-stop" data-route-stop href="#product" aria-label="Product"><span></span></a>
-            <a class="route-stop" data-route-stop href="#system" aria-label="System"><span></span></a>
-            <a class="route-stop" data-route-stop href="#development" aria-label="Development"><span></span></a>
-            <a class="route-stop" data-route-stop href="#materials" aria-label="Project materials"><span></span></a>
-            <a class="route-stop" data-route-stop href="#team" aria-label="Team"><span></span></a>
-            <a class="route-stop" data-route-stop href="#updates" aria-label="Updates"><span></span></a>
-            <a class="route-stop" data-route-stop href="#contacts" aria-label="Contacts"><span></span></a>
+            <a class="route-stop" data-route-stop href="#overview" aria-label="Overview"><span class="route-stop-symbol" aria-hidden="true">⊙</span><span class="route-stop-tooltip" aria-hidden="true">Overview</span></a>
+            <a class="route-stop" data-route-stop href="#challenge" aria-label="Challenge"><span class="route-stop-symbol" aria-hidden="true">!</span><span class="route-stop-tooltip" aria-hidden="true">Challenge</span></a>
+            <a class="route-stop" data-route-stop href="#scenarios" aria-label="Use cases"><span class="route-stop-symbol" aria-hidden="true">≡</span><span class="route-stop-tooltip" aria-hidden="true">Use cases</span></a>
+            <a class="route-stop" data-route-stop href="#product" aria-label="Product"><span class="route-stop-symbol" aria-hidden="true">↝</span><span class="route-stop-tooltip" aria-hidden="true">Product</span></a>
+            <a class="route-stop" data-route-stop href="#system" aria-label="System"><span class="route-stop-symbol" aria-hidden="true">◉</span><span class="route-stop-tooltip" aria-hidden="true">System</span></a>
+            <a class="route-stop" data-route-stop href="#development" aria-label="Development"><span class="route-stop-symbol" aria-hidden="true">⌘</span><span class="route-stop-tooltip" aria-hidden="true">Development</span></a>
+            <a class="route-stop" data-route-stop href="#materials" aria-label="Project materials"><span class="route-stop-symbol" aria-hidden="true">▤</span><span class="route-stop-tooltip" aria-hidden="true">Materials</span></a>
+            <a class="route-stop" data-route-stop href="#team" aria-label="Team"><span class="route-stop-symbol" aria-hidden="true">◌</span><span class="route-stop-tooltip" aria-hidden="true">Team</span></a>
+            <a class="route-stop" data-route-stop href="#updates" aria-label="Updates"><span class="route-stop-symbol" aria-hidden="true">↗</span><span class="route-stop-tooltip" aria-hidden="true">Updates</span></a>
+            <a class="route-stop" data-route-stop href="#contacts" aria-label="Contacts"><span class="route-stop-symbol" aria-hidden="true">✓</span><span class="route-stop-tooltip" aria-hidden="true">Contacts</span></a>
         </div>
         <span class="route-robot" data-route-robot aria-hidden="true">
             <img src="../static/images/robot-brand-mark-v02.png" alt="">
             <span class="route-scanner"></span>
         </span>
+        <span class="route-particle route-particle-one" aria-hidden="true"></span>
+        <span class="route-particle route-particle-two" aria-hidden="true"></span>
+        <span class="route-particle route-particle-three" aria-hidden="true"></span>
     </nav>
 
     <main>
         <section class="hero section" id="overview" data-route-section>
+            <div class="hero-funding">
+                <div class="container">
+                    <div class="funding-strip">
+                        <div class="support-logos">
+                            <img class="fasie-logo" src="../static/images/fasie.svg" alt="Innovation Promotion Fund">
+                            <img class="platform-logo" src="../static/images/platform-univertechpred.png" alt="University Technological Entrepreneurship Platform">
+                        </div>
+                        <p>
+                            The project is implemented with the support of the Innovation Promotion Fund
+                            under the Student Startup programme of the University Technological
+                            Entrepreneurship Platform of the Technologies federal project.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="container hero-grid">
                 <div class="hero-copy">
                     <p class="eyebrow">Autonomous shelf monitoring</p>
@@ -106,24 +128,36 @@
                     </div>
                     <p>The platform is designed for repeatable routes and controlled capture of visual information.</p>
                 </div>
-                <figure class="section-graphic scenario-graphic">
-                    <img src="../static/images/workspaces-illustration-v01.png" alt="Conceptual illustration of a retail floor, warehouse, and pilot site">
-                </figure>
                 <div class="scenario-grid">
                     <article class="scenario-card">
-                        <span>01</span>
-                        <h3>Retail floor</h3>
-                        <p>Checking price labels, barcodes, QR codes, and related shelf-level product indicators.</p>
+                        <figure class="scenario-card-media">
+                            <img src="../static/images/scenarios/retail-v02.png" alt="Concept illustration of the robot in a retail floor">
+                        </figure>
+                        <div class="scenario-card-copy">
+                            <span>01</span>
+                            <h3>Retail floor</h3>
+                            <p>Checking price labels, barcodes, QR codes, and related shelf-level product indicators.</p>
+                        </div>
                     </article>
                     <article class="scenario-card">
-                        <span>02</span>
-                        <h3>Warehouse environment</h3>
-                        <p>Route-based checks of labelling and visual information in storage and picking areas.</p>
+                        <figure class="scenario-card-media">
+                            <img src="../static/images/scenarios/warehouse-v02.png" alt="Concept illustration of the robot in a warehouse">
+                        </figure>
+                        <div class="scenario-card-copy">
+                            <span>02</span>
+                            <h3>Warehouse environment</h3>
+                            <p>Route-based checks of labelling and visual information in storage and picking areas.</p>
+                        </div>
                     </article>
                     <article class="scenario-card">
-                        <span>03</span>
-                        <h3>Pilot site</h3>
-                        <p>Reviewing how the mobile platform, navigation software, and visual module work together in operating conditions.</p>
+                        <figure class="scenario-card-media">
+                            <img src="../static/images/scenarios/pilot-v02.png" alt="Concept illustration of the robot at a pilot site">
+                        </figure>
+                        <div class="scenario-card-copy">
+                            <span>03</span>
+                            <h3>Pilot site</h3>
+                            <p>Reviewing how the mobile platform, navigation software, and visual module work together in operating conditions.</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -173,24 +207,36 @@
                     </div>
                     <p>The solution evolves as pilot scenarios are reviewed.</p>
                 </div>
-                <figure class="section-graphic technology-graphic">
-                    <img src="../static/images/system-contours-illustration-v01.png" alt="Conceptual illustration connecting the robotic platform, navigation, and visual control">
-                </figure>
                 <div class="technology-grid">
                     <article class="technology-card">
-                        <span class="item-number">A</span>
-                        <h3>Robotic platform</h3>
-                        <p>A wheeled base and modules intended for movement in retail and warehouse environments.</p>
+                        <figure class="technology-card-media">
+                            <img src="../static/images/system/platform-v01.png" alt="Concept illustration of the robotic platform">
+                        </figure>
+                        <div class="technology-card-copy">
+                            <span class="item-number">A</span>
+                            <h3>Robotic platform</h3>
+                            <p>A wheeled base and modules intended for movement in retail and warehouse environments.</p>
+                        </div>
                     </article>
                     <article class="technology-card">
-                        <span class="item-number">B</span>
-                        <h3>Navigation software</h3>
-                        <p>A software layer for route control and the sequence of operations in a work environment.</p>
+                        <figure class="technology-card-media">
+                            <img src="../static/images/system/navigation-v01.png" alt="Concept illustration of the navigation layer">
+                        </figure>
+                        <div class="technology-card-copy">
+                            <span class="item-number">B</span>
+                            <h3>Navigation software</h3>
+                            <p>A software layer for route control and the sequence of operations in a work environment.</p>
+                        </div>
                     </article>
                     <article class="technology-card">
-                        <span class="item-number">C</span>
-                        <h3>Visual control</h3>
-                        <p>Tools for collecting and preparing visual information about labels and related product indicators.</p>
+                        <figure class="technology-card-media">
+                            <img src="../static/images/system/vision-v01.png" alt="Concept illustration of visual control">
+                        </figure>
+                        <div class="technology-card-copy">
+                            <span class="item-number">C</span>
+                            <h3>Visual control</h3>
+                            <p>Tools for collecting and preparing visual information about labels and related product indicators.</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -337,17 +383,6 @@
                 <button type="button" class="text-button" data-cookie-settings>Notice settings</button>
                 <a href="../">Russian version</a>
             </div>
-        </div>
-        <div class="container support-block">
-            <div class="support-logos">
-                <img class="fasie-logo" src="../static/images/fasie.svg" alt="Innovation Promotion Fund">
-                <img class="platform-logo" src="../static/images/platform-univertechpred.png" alt="University Technological Entrepreneurship Platform">
-            </div>
-            <p>
-                The project is implemented with the support of the Innovation Promotion Fund
-                under the Student Startup programme of the University Technological
-                Entrepreneurship Platform of the Technologies federal project.
-            </p>
         </div>
     </footer>
 

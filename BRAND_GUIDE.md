@@ -28,16 +28,20 @@ conceptual unless a page explicitly links to verified materials.
 - On desktop, the homepage is structured as full-viewport stages with
   scroll snapping. Each stage must fit within one viewport without clipping
   essential content.
-- The fixed left route is the primary page navigation. Its robot marker moves
-  continuously with page progress; the active route point uses the orange
-  scan treatment.
-- Keep the route visual compact and label-free. Accessible names belong in
-  `aria-label` attributes, not visible copy.
+- The fixed left route is the primary page navigation. Its curved path shows
+  completed segments in mint, the active segment in orange, and future
+  segments in light purple. Its robot marker moves continuously with page
+  progress and scans before a new active stop.
+- Keep the route visual compact. Visible labels are allowed only in a small
+  hover or keyboard-focus card; each route stop must also have an `aria-label`.
+- The first viewport must include the logos and mandatory funding attribution
+  for the Innovation Promotion Fund and Student Startup programme. Do not
+  duplicate this block in the footer.
 - Do not add a desktop header or a language switcher above the first section.
   The language switch remains in the footer.
-- Generated wide illustrations must preserve their native 16:9 proportion.
-  Do not place them in ultra-wide, low-height containers with `object-fit:
-  contain`.
+- Wide generated source illustrations may be split into separate scenario or
+  system fragments. Each derivative is placed above its related copy, with no
+  shared enclosing card around the image and text.
 - The product stage uses an abstract route diagram until an approved product
   visual is available. Concept illustrations must not be presented as a
   finished robot or verified test material.
