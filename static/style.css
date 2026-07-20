@@ -209,21 +209,15 @@ h3 {
 }
 
 .hero::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    background: #f8f6f3;
-    content: "";
+    display: none;
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 0.96fr) minmax(470px, 1.04fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(470px, 1.1fr);
     align-items: end;
-    gap: 0;
-    min-height: 655px;
+    gap: 48px;
+    min-height: 690px;
     position: relative;
     z-index: 1;
 }
@@ -231,7 +225,7 @@ h3 {
 .hero-copy {
     position: relative;
     z-index: 1;
-    padding: 94px 64px 108px 0;
+    padding: 94px 0 108px;
 }
 
 .hero .eyebrow {
@@ -317,18 +311,21 @@ h3 {
 .robot-concept {
     position: relative;
     display: flex;
-    min-height: 650px;
+    min-height: 620px;
     margin: 0;
     align-items: stretch;
     overflow: hidden;
-    background: transparent;
+    border-radius: 8px 8px 0 0;
+    padding: 34px 28px 36px;
+    background: #f8f6f3;
 }
 
 .robot-concept > img {
     width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    object-position: center bottom;
 }
 
 .robot-stage {
@@ -1210,9 +1207,7 @@ h3 {
     }
 
     .hero::after {
-        top: auto;
-        width: 100%;
-        height: 505px;
+        display: none;
     }
 
     .hero-grid,
@@ -1238,6 +1233,7 @@ h3 {
 
     .hero-grid {
         min-height: 0;
+        gap: 32px;
     }
 
     .hero-copy {
@@ -1246,6 +1242,7 @@ h3 {
 
     .robot-concept {
         min-height: 505px;
+        padding: 22px 18px 28px;
     }
 
     .robot-stage {
