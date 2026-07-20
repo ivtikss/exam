@@ -10,7 +10,7 @@
     <meta property="og:description" content="Автономный мобильный робот для контроля товарной информации. Стадия пилота.">
     <title>Промышленные роботы и технологии</title>
     <link rel="icon" href="static/images/robot-brand-mark-v02.png" type="image/png">
-    <link rel="stylesheet" href="static/style.css?v=20260720-16">
+    <link rel="stylesheet" href="static/style.css?v=20260720-17">
     <script src="static/site.js?v=20260720-16" defer></script>
 </head>
 <body id="top" class="landing-page">
@@ -153,10 +153,14 @@
                     Функции и конфигурация уточняются в ходе разработки и пилотной проверки.
                     На сайте публикуются только подтвержденные материалы.
                 </p>
-                <figure class="section-graphic product-graphic">
-                    <img src="static/images/control-route-illustration-v01.png" alt="Концептуальная иллюстрация маршрута робота вдоль стеллажа и сбора визуальной информации">
-                    <figcaption>Концептуальная иллюстрация сценария работы. Не является изображением готового изделия.</figcaption>
-                </figure>
+                <div class="product-route-map" aria-hidden="true">
+                    <span class="route-map-path"></span>
+                    <span class="route-map-node route-map-node-start"></span>
+                    <span class="route-map-node route-map-node-check"></span>
+                    <span class="route-map-node route-map-node-result"></span>
+                    <span class="route-map-scan"></span>
+                    <img class="route-map-robot" src="static/images/robot-brand-mark-v02.png" alt="">
+                </div>
             </div>
         </section>
 

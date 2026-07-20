@@ -752,18 +752,70 @@ h3 {
     line-height: 1.5;
 }
 
-.product-graphic {
-    grid-column: 1 / -1;
-    margin-top: 20px;
+.product-route-map {
+    position: relative;
+    display: block;
+    min-height: 260px;
+    overflow: hidden;
     border: 1px solid var(--purple-5);
+    border-radius: 8px;
+    background: var(--black);
 }
 
-.product-graphic figcaption {
-    border-top: 1px solid var(--purple-5);
-    padding: 13px 16px 14px;
-    color: var(--purple-3);
-    font-size: 13px;
-    line-height: 1.45;
+.route-map-path {
+    position: absolute;
+    top: 52%;
+    right: 14%;
+    left: 14%;
+    border-top: 3px dotted var(--orange);
+}
+
+.route-map-node {
+    position: absolute;
+    top: calc(52% - 14px);
+    width: 28px;
+    height: 28px;
+    border: 3px solid var(--purple-3);
+    border-radius: 50%;
+    background: var(--black);
+}
+
+.route-map-node-start {
+    left: 14%;
+    border-color: var(--orange);
+    background: var(--orange);
+}
+
+.route-map-node-check {
+    left: calc(50% - 14px);
+    background: var(--mint);
+}
+
+.route-map-node-result {
+    right: 14%;
+    background: var(--purple-4);
+}
+
+.route-map-robot {
+    position: absolute;
+    z-index: 1;
+    top: calc(52% - 52px);
+    left: calc(50% - 26px);
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.route-map-scan {
+    position: absolute;
+    top: calc(52% - 64px);
+    left: calc(50% - 64px);
+    width: 128px;
+    height: 128px;
+    border: 1px solid var(--teal-light);
+    border-radius: 50%;
+    opacity: 0.58;
+}
 }
 
 .technology-section {
@@ -1743,13 +1795,17 @@ body.landing-page .site-footer {
 
     body.landing-page .scenario-graphic,
     body.landing-page .technology-graphic {
-        height: clamp(126px, 19svh, 190px);
+        width: min(540px, 44vw);
+        height: auto;
+        aspect-ratio: 1672 / 941;
         margin-top: clamp(24px, 4svh, 44px);
+        margin-right: 0;
+        margin-left: auto;
     }
 
     body.landing-page .section-graphic img {
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     body.landing-page .scenario-graphic + .scenario-grid,
@@ -1793,17 +1849,13 @@ body.landing-page .site-footer {
         padding-top: 16px;
     }
 
-    body.landing-page .product-graphic {
+    body.landing-page .product-route-map {
         align-self: end;
         grid-column: 1;
         grid-row: 2;
         height: clamp(174px, 28svh, 270px);
+        min-height: 0;
         margin: 0;
-    }
-
-    body.landing-page .product-graphic figcaption {
-        padding: 9px 12px;
-        font-size: 11px;
     }
 
     body.landing-page .development-layout {
@@ -1914,6 +1966,10 @@ body.landing-page .site-footer {
 
     body.landing-page .hero-copy {
         padding-top: 0;
+    }
+
+    body.landing-page .product-route-map {
+        min-height: 220px;
     }
 }
 

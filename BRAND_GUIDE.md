@@ -35,6 +35,12 @@ conceptual unless a page explicitly links to verified materials.
   `aria-label` attributes, not visible copy.
 - Do not add a desktop header or a language switcher above the first section.
   The language switch remains in the footer.
+- Generated wide illustrations must preserve their native 16:9 proportion.
+  Do not place them in ultra-wide, low-height containers with `object-fit:
+  contain`.
+- The product stage uses an abstract route diagram until an approved product
+  visual is available. Concept illustrations must not be presented as a
+  finished robot or verified test material.
 
 ## Palette
 

@@ -10,7 +10,7 @@
     <meta property="og:description" content="An autonomous mobile robot for product information control. Pilot stage.">
     <title>Industrial Robotics and Technologies</title>
     <link rel="icon" href="../static/images/robot-brand-mark-v02.png" type="image/png">
-    <link rel="stylesheet" href="../static/style.css?v=20260720-16">
+    <link rel="stylesheet" href="../static/style.css?v=20260720-17">
     <script src="../static/site.js?v=20260720-16" defer></script>
 </head>
 <body id="top" class="landing-page">
@@ -153,10 +153,14 @@
                     Functions and configuration are refined during development and pilot validation.
                     Only verified materials are published on this website.
                 </p>
-                <figure class="section-graphic product-graphic">
-                    <img src="../static/images/control-route-illustration-v01.png" alt="Conceptual illustration of a robot moving along a shelf and collecting visual information">
-                    <figcaption>Conceptual illustration of a working scenario. It is not an image of a finished product.</figcaption>
-                </figure>
+                <div class="product-route-map" aria-hidden="true">
+                    <span class="route-map-path"></span>
+                    <span class="route-map-node route-map-node-start"></span>
+                    <span class="route-map-node route-map-node-check"></span>
+                    <span class="route-map-node route-map-node-result"></span>
+                    <span class="route-map-scan"></span>
+                    <img class="route-map-robot" src="../static/images/robot-brand-mark-v02.png" alt="">
+                </div>
             </div>
         </section>
 
