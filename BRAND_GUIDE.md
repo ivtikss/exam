@@ -12,8 +12,10 @@ conceptual unless a page explicitly links to verified materials.
 ## Typography
 
 - Primary interface typeface: `TT Norms Pro`.
-- Fallback stack before licensed webfonts are provided: `TT Norms`,
-  `Inter`, `Arial`, `sans-serif`.
+- Local `TT Norms Pro` webfonts are bundled in `static/fonts/` in weights
+  400, 500, 700, 800, and 900. The package was provided by the project owner
+  on 2026-07-20.
+- Fallback stack: `TT Norms`, `Inter`, `Arial`, `sans-serif`.
 - Accent typeface: `Tochka Script`.
 - Use `Tochka Script` only for short, non-essential accents such as the
   pilot tag. Do not use it for navigation, paragraphs, long headings, or
