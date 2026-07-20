@@ -10,7 +10,7 @@
     <meta property="og:description" content="Автономный мобильный робот для контроля товарной информации. Стадия пилота.">
     <title>Промышленные роботы и технологии</title>
     <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="static/style.css?v=20260720-05">
+    <link rel="stylesheet" href="static/style.css?v=20260720-07">
     <script src="static/site.js" defer></script>
 </head>
 <body id="top">
@@ -60,22 +60,8 @@
                 </div>
 
                 <figure class="robot-concept">
-                    <div class="robot-stage" aria-hidden="true">
-                        <div class="stage-grid"></div>
-                        <div class="robot-sensor"></div>
-                        <div class="robot-mast"></div>
-                        <div class="robot-body">
-                            <span class="robot-panel"></span>
-                            <span class="robot-panel"></span>
-                            <span class="robot-panel"></span>
-                        </div>
-                        <div class="robot-bumper"></div>
-                        <div class="robot-wheel robot-wheel-left"></div>
-                        <div class="robot-wheel robot-wheel-right"></div>
-                        <div class="stage-label stage-label-top">Модуль визуального контроля</div>
-                        <div class="stage-label stage-label-bottom">Мобильная платформа</div>
-                    </div>
-                    <figcaption>Концептуальная схема платформы. Не является изображением готового изделия.</figcaption>
+                    <img src="static/images/robot-platform-concept-v01.jpg" alt="Концептуальный внешний вид мобильной роботизированной платформы">
+                    <figcaption>Концептуальный визуальный образ платформы. Не является изображением готового изделия.</figcaption>
                 </figure>
             </div>
         </section>
@@ -106,6 +92,35 @@
                         <span class="item-number">03</span>
                         <h3>Разные условия объекта</h3>
                         <p>Торговые и складские помещения требуют маршрутов, понятных правил фиксации и регулярного контроля.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="scenarios-section section" aria-labelledby="scenarios-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Сценарии</p>
+                        <h2 id="scenarios-title">Для пространств, где товарную информацию нужно проверять регулярно</h2>
+                    </div>
+                    <p>Платформа проектируется для повторяемых маршрутов и контролируемой фиксации визуальной информации.</p>
+                </div>
+                <div class="scenario-grid">
+                    <article class="scenario-card">
+                        <span>01</span>
+                        <h3>Торговый зал</h3>
+                        <p>Проверка ценников, штрих- и QR-кодов, а также сопутствующих индикаторов на полках.</p>
+                    </article>
+                    <article class="scenario-card">
+                        <span>02</span>
+                        <h3>Складское помещение</h3>
+                        <p>Маршрутный контроль маркировки и визуальной информации в зонах хранения и комплектации.</p>
+                    </article>
+                    <article class="scenario-card">
+                        <span>03</span>
+                        <h3>Пилотная площадка</h3>
+                        <p>Проверка взаимодействия мобильной платформы, навигационного ПО и визуального модуля в рабочих условиях.</p>
                     </article>
                 </div>
             </div>
@@ -195,8 +210,15 @@
                     <li class="development-current">
                         <span class="development-index">03</span>
                         <div>
-                            <h3>Пилотная проверка</h3>
-                            <p>Проверка сценариев применения и уточнение решения на основе наблюдений.</p>
+                            <h3>Сборка и испытания</h3>
+                            <p>Проверка ходовых и прикладных сценариев в рамках пилота с фиксацией результатов в протоколах.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="development-index">04</span>
+                        <div>
+                            <h3>Сайт стартап-проекта</h3>
+                            <p>Публичное описание продукта и публикация согласованных материалов по мере их подготовки.</p>
                         </div>
                     </li>
                 </ol>
@@ -204,16 +226,32 @@
         </section>
 
         <section class="evidence-section section" aria-labelledby="evidence-title">
-            <div class="container evidence-layout">
-                <div>
-                    <p class="eyebrow">Материалы проекта</p>
-                    <h2 id="evidence-title">Доказательная база публикуется по мере готовности</h2>
+            <div class="container">
+                <div class="evidence-layout">
+                    <div>
+                        <p class="eyebrow">Материалы проекта</p>
+                        <h2 id="evidence-title">Доказательная база публикуется по мере готовности</h2>
+                    </div>
+                    <p>
+                        Здесь будут доступны согласованные описания разработки, фото и видео,
+                        материалы испытаний и обновления по пилотной проверке. До публикации
+                        каждый материал проходит проверку на точность и отсутствие закрытых данных.
+                    </p>
                 </div>
-                <p>
-                    Здесь будут доступны согласованные описания разработки, фото и видео,
-                    материалы испытаний и обновления по пилотной проверке. До публикации
-                    каждый материал проходит проверку на точность и отсутствие закрытых данных.
-                </p>
+                <div class="evidence-status" aria-label="Состав публикуемых материалов">
+                    <div class="evidence-status-item">
+                        <span>Конструкция</span>
+                        <p>Схемы, описания модулей и безопасные для публикации фрагменты документации.</p>
+                    </div>
+                    <div class="evidence-status-item">
+                        <span>ПО управления</span>
+                        <p>Согласованные демонстрационные материалы, описание версий и сценариев работы.</p>
+                    </div>
+                    <div class="evidence-status-item">
+                        <span>Испытания</span>
+                        <p>Протоколы, фото, видео и выводы после проверки исходных материалов.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
