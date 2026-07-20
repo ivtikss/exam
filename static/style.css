@@ -221,23 +221,35 @@ h3 {
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 86px 0 0;
+    padding: 0;
     background: var(--violet);
     color: #ffffff;
+}
+
+.hero::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: #d7d5d6;
+    content: "";
 }
 
 .hero-grid {
     display: grid;
     grid-template-columns: minmax(0, 0.96fr) minmax(470px, 1.04fr);
     align-items: end;
-    gap: 52px;
+    gap: 0;
     min-height: 655px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-copy {
     position: relative;
     z-index: 1;
-    padding: 45px 0 108px;
+    padding: 94px 64px 108px 0;
 }
 
 .hero .eyebrow {
@@ -327,7 +339,7 @@ h3 {
     margin: 0;
     align-items: stretch;
     overflow: hidden;
-    background: #d7d5d6;
+    background: transparent;
 }
 
 .robot-concept > img {
@@ -1107,7 +1119,7 @@ h3 {
 
     .hero-grid {
         grid-template-columns: minmax(0, 0.98fr) minmax(400px, 0.82fr);
-        gap: 30px;
+        gap: 0;
     }
 
     .product-layout,
@@ -1156,7 +1168,13 @@ h3 {
     }
 
     .hero {
-        padding-top: 38px;
+        padding-top: 0;
+    }
+
+    .hero::after {
+        top: auto;
+        width: 100%;
+        height: 505px;
     }
 
     .hero-grid,
@@ -1174,7 +1192,7 @@ h3 {
     }
 
     .hero-copy {
-        padding: 36px 0 0;
+        padding: 76px 0 0;
     }
 
     .robot-concept {
