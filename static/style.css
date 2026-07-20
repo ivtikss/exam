@@ -90,30 +90,12 @@ img {
 }
 
 .wordmark-mark {
-    display: grid;
-    grid-template-columns: repeat(3, 5px);
-    align-items: end;
-    gap: 3px;
-    width: 21px;
-    height: 24px;
-}
-
-.wordmark-mark span {
     display: block;
-    background: #ffffff;
-}
-
-.wordmark-mark span:nth-child(1) {
-    height: 9px;
-}
-
-.wordmark-mark span:nth-child(2) {
-    height: 17px;
-    background: var(--orange);
-}
-
-.wordmark-mark span:nth-child(3) {
-    height: 24px;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 auto;
+    object-fit: contain;
+    object-position: center;
 }
 
 .wordmark-text {
@@ -995,6 +977,11 @@ h3 {
     color: #f1eaff;
     font-size: 14px;
     font-weight: 700;
+}
+
+.footer-brand .wordmark-mark {
+    width: 46px;
+    height: 46px;
 }
 
 .footer-links {
