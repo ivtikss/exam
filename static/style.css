@@ -724,6 +724,14 @@ h3 {
     border: 1px solid #835daf;
 }
 
+.product-graphic figcaption {
+    border-top: 1px solid #835daf;
+    padding: 13px 16px 14px;
+    color: #d8c8f6;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
 .technology-section {
     background: var(--orange);
 }
