@@ -3,82 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Проект автономного мобильного робота-сканера для контроля ценников и товарной информации.">
-    <title>Робот-сканер</title>
-    <link rel="stylesheet" href="static/style.css?v=20260720-02">
+    <meta name="description" content="Промышленные роботы и технологии: проект автономного мобильного робота для контроля товарной информации на полках.">
+    <meta name="theme-color" content="#14221b">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Промышленные роботы и технологии">
+    <meta property="og:description" content="Автономный мобильный робот для контроля товарной информации. Стадия пилота.">
+    <title>Промышленные роботы и технологии</title>
+    <link rel="stylesheet" href="static/style.css?v=20260720-03">
+    <script src="static/site.js" defer></script>
 </head>
-<body>
-    <header class="topbar">
-        <div class="shell topbar__content">
-            <a class="brand" href="/" aria-label="Робот-сканер">
-                <span class="brand__mark" aria-hidden="true">
+<body id="top">
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="wordmark" href="#top" aria-label="Промышленные роботы и технологии">
+                <span class="wordmark-mark" aria-hidden="true">
                     <span></span>
                     <span></span>
                     <span></span>
                 </span>
-                <span>Робот-сканер</span>
+                <span class="wordmark-text">Промышленные<br>роботы и технологии</span>
             </a>
-            <span class="status">Сайт в разработке</span>
+            <nav class="main-nav" aria-label="Основная навигация">
+                <a href="#product">Продукт</a>
+                <a href="#development">Разработка</a>
+                <a href="#team">Команда</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <a class="language-link" href="en/" lang="en">EN</a>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="shell hero__grid">
-                <div class="hero__copy">
-                    <p class="eyebrow">Проект автономного мониторинга</p>
-                    <h1>Контроль полок без рутинных обходов</h1>
-                    <p class="hero__lead">
-                        Разрабатываем мобильного робота для проверки ценников, штрих- и QR-кодов
-                        и сопутствующей товарной информации в торговых и складских помещениях.
+        <section class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Автономный мониторинг полок</p>
+                    <div class="hero-title-row">
+                        <h1>Робот для контроля товарной информации</h1>
+                        <span class="pilot-status">Пилот</span>
+                    </div>
+                    <p class="hero-lead">
+                        Мы разрабатываем мобильную роботизированную платформу для проверки
+                        ценников, штрих- и QR-кодов и сопутствующей визуальной информации
+                        в торговых и складских помещениях.
                     </p>
-                    <p class="hero__note">
-                        Здесь будет опубликована информация о продукте, ходе разработки и результатах испытаний.
-                    </p>
-                </div>
-                <aside class="scope" aria-label="Назначение проекта">
-                    <p class="scope__label">Назначение</p>
-                    <ul>
-                        <li>Визуальный контроль ценников</li>
-                        <li>Автономное перемещение по маршруту</li>
-                        <li>Фиксация выявленных несоответствий</li>
+                    <ul class="hero-facts" aria-label="Контекст проекта">
+                        <li>Торговые объекты</li>
+                        <li>Складские помещения</li>
+                        <li>Проверка в рамках пилота</li>
                     </ul>
-                </aside>
+                </div>
+
+                <figure class="robot-concept">
+                    <div class="robot-stage" aria-hidden="true">
+                        <div class="stage-grid"></div>
+                        <div class="robot-sensor"></div>
+                        <div class="robot-mast"></div>
+                        <div class="robot-body">
+                            <span class="robot-panel"></span>
+                            <span class="robot-panel"></span>
+                            <span class="robot-panel"></span>
+                        </div>
+                        <div class="robot-bumper"></div>
+                        <div class="robot-wheel robot-wheel-left"></div>
+                        <div class="robot-wheel robot-wheel-right"></div>
+                        <div class="stage-label stage-label-top">Модуль визуального контроля</div>
+                        <div class="stage-label stage-label-bottom">Мобильная платформа</div>
+                    </div>
+                    <figcaption>Концептуальная схема платформы. Не является изображением готового изделия.</figcaption>
+                </figure>
             </div>
         </section>
 
-        <section class="directions" aria-labelledby="directions-title">
-            <div class="shell">
+        <section class="problem-section section" aria-labelledby="problem-title">
+            <div class="container">
+                <div class="section-intro">
+                    <p class="eyebrow">Задача</p>
+                    <h2 id="problem-title">Контроль полок требует регулярной и точной проверки</h2>
+                    <p>
+                        В торговом зале и на складе товарная информация меняется постоянно.
+                        Проект направлен на автоматизацию повторяющихся контрольных обходов
+                        и подготовку данных для последующей проверки.
+                    </p>
+                </div>
+                <div class="problem-list">
+                    <article class="problem-item">
+                        <span class="item-number">01</span>
+                        <h3>Трудоемкие обходы</h3>
+                        <p>Проверка полок вручную занимает время сотрудников и требует повторяемой процедуры контроля.</p>
+                    </article>
+                    <article class="problem-item">
+                        <span class="item-number">02</span>
+                        <h3>Визуальные несоответствия</h3>
+                        <p>Ценники и товарные индикаторы нуждаются в своевременной сверке с фактической обстановкой на полке.</p>
+                    </article>
+                    <article class="problem-item">
+                        <span class="item-number">03</span>
+                        <h3>Разные условия объекта</h3>
+                        <p>Торговые и складские помещения требуют маршрутов, понятных правил фиксации и регулярного контроля.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section section" id="product" aria-labelledby="product-title">
+            <div class="container product-layout">
+                <div>
+                    <p class="eyebrow eyebrow-light">Продукт</p>
+                    <h2 id="product-title">Мобильная платформа для повторяемого маршрута контроля</h2>
+                </div>
+                <div class="product-flow" aria-label="Принцип работы">
+                    <div class="flow-step">
+                        <span>01</span>
+                        <p>Движение по заданному маршруту</p>
+                    </div>
+                    <div class="flow-step">
+                        <span>02</span>
+                        <p>Сбор визуальной информации на полках</p>
+                    </div>
+                    <div class="flow-step">
+                        <span>03</span>
+                        <p>Подготовка данных для анализа несоответствий</p>
+                    </div>
+                </div>
+                <p class="product-note">
+                    Функции и конфигурация уточняются в ходе разработки и пилотной проверки.
+                    На сайте публикуются только подтвержденные материалы.
+                </p>
+            </div>
+        </section>
+
+        <section class="technology-section section" aria-labelledby="technology-title">
+            <div class="container">
                 <div class="section-heading">
-                    <p class="eyebrow">Фокус разработки</p>
-                    <h2 id="directions-title">Будущая система</h2>
+                    <div>
+                        <p class="eyebrow">Система</p>
+                        <h2 id="technology-title">Три контура разработки</h2>
+                    </div>
+                    <p>Состав решения развивается по мере проверки сценариев пилота.</p>
                 </div>
-                <div class="direction-list">
-                    <article class="direction">
-                        <span class="direction__number">01</span>
+                <div class="technology-grid">
+                    <article class="technology-card">
+                        <span class="item-number">A</span>
                         <h3>Роботизированная платформа</h3>
-                        <p>Колёсное шасси и набор модулей для работы в помещениях торговых объектов и складов.</p>
+                        <p>Колёсная база и модули, предназначенные для перемещения в помещениях торговых объектов и складов.</p>
                     </article>
-                    <article class="direction">
-                        <span class="direction__number">02</span>
+                    <article class="technology-card">
+                        <span class="item-number">B</span>
                         <h3>Навигационное ПО</h3>
-                        <p>Программное управление движением и сбор данных для выполнения контрольного маршрута.</p>
+                        <p>Программный контур для управления маршрутом и последовательностью операций в рабочем пространстве.</p>
                     </article>
-                    <article class="direction">
-                        <span class="direction__number">03</span>
+                    <article class="technology-card">
+                        <span class="item-number">C</span>
                         <h3>Визуальная проверка</h3>
-                        <p>Сканирование информации на полках и подготовка данных о замеченных несоответствиях.</p>
+                        <p>Средства сбора и подготовки визуальной информации о ценниках и сопутствующих товарных индикаторах.</p>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="development-section section" id="development" aria-labelledby="development-title">
+            <div class="container development-layout">
+                <div class="section-intro">
+                    <p class="eyebrow">Разработка</p>
+                    <h2 id="development-title">Работа над продуктом ведется поэтапно</h2>
+                    <p>
+                        Результаты, протоколы и материалы испытаний будут добавляться после
+                        внутренней проверки и подготовки к публикации.
+                    </p>
+                </div>
+                <ol class="development-list">
+                    <li>
+                        <span class="development-index">01</span>
+                        <div>
+                            <h3>Конструкторская проработка</h3>
+                            <p>Формирование состава платформы, модулей и проектной документации.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="development-index">02</span>
+                        <div>
+                            <h3>Программное управление</h3>
+                            <p>Развитие программного контура движения и подготовки данных контроля.</p>
+                        </div>
+                    </li>
+                    <li class="development-current">
+                        <span class="development-index">03</span>
+                        <div>
+                            <h3>Пилотная проверка</h3>
+                            <p>Проверка сценариев применения и уточнение решения на основе наблюдений.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="evidence-section section" aria-labelledby="evidence-title">
+            <div class="container evidence-layout">
+                <div>
+                    <p class="eyebrow">Материалы проекта</p>
+                    <h2 id="evidence-title">Доказательная база публикуется по мере готовности</h2>
+                </div>
+                <p>
+                    Здесь будут доступны согласованные описания разработки, фото и видео,
+                    материалы испытаний и обновления по пилотной проверке. До публикации
+                    каждый материал проходит проверку на точность и отсутствие закрытых данных.
+                </p>
+            </div>
+        </section>
+
+        <section class="team-section section" id="team" aria-labelledby="team-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Команда</p>
+                        <h2 id="team-title">Функции проекта</h2>
+                    </div>
+                    <p>Персональный состав и контакты публикуются только после согласования.</p>
+                </div>
+                <div class="role-grid">
+                    <div class="role-item">
+                        <span>01</span>
+                        <p>Конструкция и интеграция платформы</p>
+                    </div>
+                    <div class="role-item">
+                        <span>02</span>
+                        <p>Навигационное и управляющее ПО</p>
+                    </div>
+                    <div class="role-item">
+                        <span>03</span>
+                        <p>Пилотная проверка и подготовка материалов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section section" aria-labelledby="news-title">
+            <div class="container news-layout">
+                <div>
+                    <p class="eyebrow">Новости</p>
+                    <h2 id="news-title">Обновления</h2>
+                </div>
+                <article class="news-item">
+                    <time datetime="2026-07-20">20 июля 2026</time>
+                    <h3>Подготовлена публичная страница проекта</h3>
+                    <p>На сайте опубликовано базовое описание продукта, статуса пилота и направлений разработки.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contacts-section section" id="contacts" aria-labelledby="contacts-title">
+            <div class="container contacts-layout">
+                <div>
+                    <p class="eyebrow eyebrow-light">Контакты</p>
+                    <h2 id="contacts-title">Публичные каналы связи готовятся к публикации</h2>
+                </div>
+                <p>
+                    Контактные данные ООО «Промышленные роботы и технологии» будут добавлены
+                    после подтверждения владельцев каналов и порядка обработки обращений.
+                </p>
             </div>
         </section>
     </main>
 
-    <footer class="support">
-        <div class="shell support__content">
-            <div class="support__logos">
-                <img class="support__fasie" src="static/images/fasie.svg" alt="Фонд содействия инновациям">
-                <img class="support__platform" src="static/images/platform-univertechpred.png" alt="Платформа университетского технологического предпринимательства">
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <span class="wordmark-mark" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <p>ООО «Промышленные роботы и технологии»</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <button type="button" class="text-button" data-cookie-settings>Настройки уведомления</button>
+                <a href="en/">English version</a>
+            </div>
+        </div>
+        <div class="container support-block">
+            <div class="support-logos">
+                <img class="fasie-logo" src="static/images/fasie.svg" alt="Фонд содействия инновациям">
+                <img class="platform-logo" src="static/images/platform-univertechpred.png" alt="Платформа университетского технологического предпринимательства">
             </div>
             <p>
                 Проект реализован при поддержке Фонда содействия инновациям в рамках программы
@@ -87,5 +294,16 @@
             </p>
         </div>
     </footer>
+
+    <aside class="cookie-notice" data-cookie-notice aria-label="Уведомление о техническом хранилище">
+        <p>
+            Сайт не использует аналитику и формы сбора данных. Чтобы не показывать это уведомление повторно,
+            после закрытия сохраняется техническая запись в локальном хранилище браузера.
+        </p>
+        <div class="cookie-actions">
+            <a href="privacy.html">Подробнее</a>
+            <button type="button" data-cookie-accept>Понятно</button>
+        </div>
+    </aside>
 </body>
 </html>
