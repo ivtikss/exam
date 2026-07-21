@@ -1790,6 +1790,10 @@ body.landing-page .site-footer {
 }
 
 @media (min-width: 961px) {
+    body.landing-page {
+        --landing-footer-height: 108px;
+    }
+
     body.landing-page .container {
         width: min(1280px, calc(100% - 320px));
     }
@@ -1802,6 +1806,28 @@ body.landing-page .site-footer {
         align-items: center;
         padding: clamp(30px, 5.6svh, 64px) 0;
         overflow: clip;
+    }
+
+    body.landing-page .contacts-section {
+        height: calc(100svh - var(--landing-footer-height));
+        min-height: calc(100svh - var(--landing-footer-height));
+        max-height: calc(100svh - var(--landing-footer-height));
+    }
+
+    body.landing-page .site-footer {
+        height: var(--landing-footer-height);
+        min-height: var(--landing-footer-height);
+        max-height: var(--landing-footer-height);
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+    }
+
+    body.landing-page .site-footer .footer-main {
+        height: 100%;
+        box-sizing: border-box;
+        border-top: 1px solid var(--purple-6);
+        border-bottom: 0;
+        padding: 0;
     }
 
     body.landing-page h1 {
