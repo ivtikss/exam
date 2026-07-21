@@ -10,8 +10,8 @@
     <meta property="og:description" content="An autonomous mobile robot for product information control. Pilot stage.">
     <title>Industrial Robotics and Technologies</title>
     <link rel="icon" href="../static/images/robot-brand-mark-v02.png" type="image/png">
-    <link rel="stylesheet" href="../static/style.css?v=20260720-24">
-    <script src="../static/site.js?v=20260720-17" defer></script>
+    <link rel="stylesheet" href="../static/style.css?v=20260721-30">
+    <script src="../static/site.js?v=20260721-19" defer></script>
 </head>
 <body id="top" class="landing-page">
     <nav class="route-navigation" data-route-navigation aria-label="Site section route">
@@ -34,12 +34,18 @@
         </div>
         <span class="route-robot" data-route-robot aria-hidden="true">
             <img src="../static/images/robot-brand-mark-v02.png" alt="">
-            <span class="route-scanner"></span>
         </span>
-        <span class="route-particle route-particle-one" aria-hidden="true"></span>
-        <span class="route-particle route-particle-two" aria-hidden="true"></span>
-        <span class="route-particle route-particle-three" aria-hidden="true"></span>
     </nav>
+    <div class="route-scan-overlay" data-route-scan-overlay aria-hidden="true">
+        <svg class="route-scan-beam" data-route-beam focusable="false">
+            <path class="route-scan-cone" data-route-beam-cone></path>
+            <path class="route-scan-line route-scan-line-one" data-route-beam-line></path>
+            <path class="route-scan-line route-scan-line-two" data-route-beam-line></path>
+            <circle class="route-scan-data route-scan-data-one" data-route-beam-data></circle>
+            <circle class="route-scan-data route-scan-data-two" data-route-beam-data></circle>
+            <circle class="route-scan-data route-scan-data-three" data-route-beam-data></circle>
+        </svg>
+    </div>
 
     <main>
         <section class="hero section" id="overview" data-route-section>
