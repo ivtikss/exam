@@ -576,12 +576,24 @@ h3 {
     right: 0;
     bottom: 0;
     left: 0;
+    display: grid;
+    gap: 3px;
     margin: 0;
-    padding: 14px 18px;
-    background: rgb(25 25 25 / 78%);
-    color: var(--white);
-    font-size: 11px;
+    padding: 12px 18px 13px;
+    border-top: 1px solid rgb(255 255 255 / 34%);
+    background: rgb(255 255 255 / 94%);
+    color: var(--ink);
     line-height: 1.32;
+}
+
+.concept-caption-title {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.concept-caption-note {
+    color: var(--muted);
+    font-size: 11px;
 }
 
 .problem-section {
