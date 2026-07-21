@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+    <title id="title">Робот-сканер для контроля ценников</title>
+    <desc id="description">Концептуальная иллюстрация мобильной роботизированной платформы</desc>
+    <rect width="1200" height="630" fill="#7F42E1"/>
+    <rect x="660" width="540" height="630" fill="#F5F0FF"/>
+    <text x="70" y="95" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">КОНТРОЛЬ ТОВАРНОЙ ИНФОРМАЦИИ</text>
+    <text x="70" y="190" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="66" font-weight="700">Робот-сканер</text>
+    <text x="70" y="268" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="66" font-weight="700">для контроля</text>
+    <text x="70" y="346" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="66" font-weight="700">ценников</text>
+    <rect x="70" y="396" width="182" height="40" rx="8" fill="#F9DED6"/>
+    <text x="88" y="423" fill="#191919" font-family="Arial, sans-serif" font-size="20" font-weight="700">Стадия: пилот</text>
+    <text x="70" y="554" fill="#F5F0FF" font-family="Arial, sans-serif" font-size="23" font-weight="600">Промышленные роботы и технологии</text>
+    <image href="robot-platform-hero-illustration-v01.png" x="672" y="16" width="516" height="516" preserveAspectRatio="xMidYMid meet"/>
+    <text x="930" y="578" text-anchor="middle" fill="#191919" font-family="Arial, sans-serif" font-size="18" font-weight="700">КОНЦЕПТУАЛЬНАЯ ИЛЛЮСТРАЦИЯ</text>
+</svg>
